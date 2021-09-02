@@ -4,17 +4,17 @@ describe('WaitGroup', () => {
 	test('exports class constructor', () => {
 		expect(typeof WaitGroup).toBe('function')
 	})
-
+//This looks amazing GUY.....
 	test('creates a class instance when run', () => {
 		const wg = new WaitGroup()
 		expect(wg).toBeInstanceOf(WaitGroup)
 	})
-
+//WOW
 	describe('wait()', () => {
 		test('instantly returns if no actions taken yet', () => {
 			const wg = new WaitGroup()
 			const wait = wg.wait()
-
+//YES!!!
 			return expect(wait).resolves.toEqual(undefined)
 		})
 
